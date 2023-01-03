@@ -17,6 +17,8 @@ Aquest codi que es troba al directori *few-shot-master* ha estat extret de https
 ## Relation Networks
 Aquest codi es troba al directori *LearningToCompare_FSL-master* i ha estat extret de https://github.com/floodsung/LearningToCompare_FSL. EL codi original està escrit en una versió anterior de *PyTorch*, aleshores per tal d'assegurar el seu correcte funcionament he hagut de modificar alguna de les línies de codi, per tal que funcioni bé en l'última versió. A més he afegit a l'algorisme un criteri de parada, en el qual si no obté cap millora en l'accuracy durant les últimes 10 fases de test donarem per acabat l'entrenament. Per executar aquest codi es pot consultar el script de bash anomenat *exp_pipeline.sh* que he creat dins la carpeta *LearningToCompare_FSL-master/miniimagenet*, en el qual es troben el seguit d'experiments que he fet per tal d'avaluar l'eficàcia d'aquest model.
 
+A part de les quatre carpetes mencionades anteriorment, trobem dos fitxers: *Mes_Enlla_De_lAprenentatge_Supervisat.pdf*, el qual conté el cos de l'estudi i comparativa entre els diferents algorismes, i *My_MAML_Sinusoid.ipynb*, el qual conté la meva implementació personal de l'algorisme de MAML al cas de regressió, reproduint els experiments que van dur a terme els autors originals de l'algorisme per a la regressió utilitzant sinusoides.
+
 
 Per tal de poder descarregar les bases de dades en l'estructura concreta que requereix cada algorisme descarregar la següent carpeta: https://uab-my.sharepoint.com/:f:/g/personal/1533660_uab_cat/EqaOVswEL3NFkJYbnmgF-5wBCI1vKt3mSsRLhVbD4HRBCw?e=7X7Geh. S'han de moure els arxius:
 - *datas.zip* de la carpeta *LearningtoCompareRN* a la carpeta *LearningToCompare_FSL-master* i descomprimir el fitxer.
